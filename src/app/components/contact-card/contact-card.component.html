@@ -1,0 +1,31 @@
+<!-- <p>contact-card works!</p> -->
+<!-- <pre>
+        {{selectedContact | json}}
+</pre> -->
+
+<div class="card sticky-top shadow-lg">
+    <img [src]="selectedContact.picture.large" alt="">
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                Name : {{selectedContact.name.first}} Last {{selectedContact.name.last}}
+            </li>
+            <li class="list-group-item">
+                {{selectedContact.email}}
+            </li>
+            <li class="list-group-item">
+                {{selectedContact.dob.age}}
+            </li>
+            <li class="list-group-item">
+                {{selectedContact.location.city}}
+            </li>
+            <li class="list-group-item">
+                {{selectedContact.location.state}}
+            </li>
+<!--             
+            <li class="list-group-item">
+                {{selectedContact}}
+            </li> -->
+        </ul>
+    </div>
+</div>
